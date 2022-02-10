@@ -1,0 +1,56 @@
+/* RESET */
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+/* VARIABLES */
+
+
+:root {
+    --pimery_color: #fff;
+    --accent: #FBD784;
+}
+
+
+
+/* BODY */
+
+body {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--pimery_color);
+    background-color: #0B1D26;
+}
+
+
+
+
+/* HEADER */
+
+.header {
+    background: url(../img/jpg/bg.jpg) no-repeat center center ;
+    background-size: cover;
+}   
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav {
+    
+
+
+}
+.logo {
+}
+.account {
+}
