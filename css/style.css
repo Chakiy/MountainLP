@@ -7,12 +7,24 @@
 }
 
 
+
+
+/* A TAG BASIC STALING */
+
+
+a {
+    color: var(--pimery_color);
+    text-decoration: none;
+    
+}
+
+
 /* VARIABLES */
 
 
 :root {
     --pimery_color: #fff;
-    --accent: #FBD784;
+    --accent: #FBD784; 
 }
 
 
@@ -25,7 +37,9 @@ body {
     font-style: normal;
     font-size: 18px;
     color: var(--pimery_color);
+    background: url(../img/jpg/bg.jpg) no-repeat center top ;
     background-color: #0B1D26;
+    background-size: 100% auto;
 }
 
 
@@ -34,23 +48,206 @@ body {
 /* HEADER */
 
 .header {
-    background: url(../img/jpg/bg.jpg) no-repeat center center ;
-    background-size: cover;
+ 
+    /* border: 1px transparent solid; */
+    /* overflow: auto; */
+    /* padding-top: 1px; */
+    /* margin-top: -1px; */
+
 }   
+
+
+
+/* NAVIGATION ROW */
 
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 80px 64px;   
+}
+
+
+.navigation a {
+    transition: color 200ms linear;
+}
+
+.navigation a:hover {
+    color: var(--accent);
     
 }
 
-.nav {
-    
 
-
-}
 .logo {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 32px;
 }
+
+.logo span {
+   display: inline-block;
+   transition: transform 400ms linear;
+   cursor: default;
+}
+
+.logo span:hover {
+    transform: translateY(-10px);
+}
+
+
+.nav  ul{
+    display: flex;
+    
+}
+
+.nav ul li {
+    list-style: none;
+    margin-right: 40px;
+    
+}
+
+
+
+
+
+.nav ul li:last-child {
+   
+    margin-right: none;
+    
+}
+
+
 .account {
+    display: flex;
+    align-items: end;
 }
+
+.account_logo{
+    margin-right: 8px;
+}
+
+
+
+
+/* WELCOMING BANNER */
+
+
+
+.welcomeing {
+    
+    display: block;
+    margin: 0 auto;
+    margin-top: 199px;
+    max-width: 950px;
+    cursor: default;
+    transition: transform 400ms ease-in-out;
+   
+}
+
+
+
+
+.welcomeing:hover{
+   
+    transform: translateY(-10%);
+
+
+    /* animation: rotote 6s linear ;
+    animation-iteration-count: 1; */
+
+    
+}
+
+/* ANIMATION ROTATION AND SCALING TESTING */
+
+/* @keyframes rotote {
+    from {
+        transform: rotateZ(0deg) ;   
+    }
+
+    50% {
+        transform: rotateZ(360deg) scale(50%) ;
+    }
+
+    to {
+        transform: rotateZ(0deg) scale(100%)
+        }
+  } */
+
+
+
+.welcomeing_text {
+    position: relative;
+    font-size: 18px;
+    line-height: 1.222;
+    color: var(--accent);
+    margin-bottom: 32px;
+    padding-left: 104px;
+}
+
+.welcomeing_text::before {
+    position: absolute;
+    left: 0;
+    top: 50%;  
+    transform: translateY(-50%);
+    display: block;
+    content: "";
+    width: 72px;
+    height: 2px;
+    background-color: var(--accent);
+    /* border: 1px solid var(--accent); */
+}
+
+.welcoming_heading {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+    font-size: 88px;
+    line-height: 1.16;
+    margin-bottom: 32px;
+    text-transform: capitalize;
+}
+.scroll {
+   display: inline-block;
+    position: relative;
+    font-size: 18px;
+    line-height: 1.1;
+    padding-right: 32px;
+}
+
+.scroll::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 24px;
+    background-image: url("../img/svg/arrow_down.png");
+}
+
+
+
+
+
+/* Test */
+
+.test {
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+}
+
+.transl {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    transform: translatey(100%);
+}
+span{
+    display: inline-block;
+}
+span:hover {
+
+    transform: translateY(-15%);
+}
+
